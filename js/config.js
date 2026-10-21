@@ -4,7 +4,7 @@
 
 // Set after the NYBurger backend's Apps Script Web App is deployed — see
 // NYBurger/docs/backend-deployment.md for the deployment procedure.
-export const API_URL = 'https://script.google.com/macros/s/<SET_AFTER_NYBURGER_BACKEND_DEPLOY>/exec';
+export const API_URL = 'https://script.google.com/macros/s/AKfycbz6KDvZAfcQVXnB-KsobmlHv8l78CClJoMXfSlz3BZsY4ev02DOToYPlASqOZ2-twZ8WQ/exec';
 
 export const ORDER_TIMEOUT_MS = 35000;
 export const MENU_TIMEOUT_MS = 15000;
