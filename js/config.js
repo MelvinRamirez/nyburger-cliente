@@ -18,5 +18,5 @@ export const LINES_MAX = 50; // validateCreateOrder_
 export const STORAGE_KEY = 'foodc.cliente.v1';
 export const TABLE_SESSION_KEY = 'foodc.cliente.table';
 
-// Provisorio: ver design.md "Open Questions" (moneda a confirmar con producto).
-export const CURRENCY_SYMBOL = '$';
+// Lempira hondureña (HNL), confirmado por Melvin 2026-10-24.
+export const CURRENCY_SYMBOL = 'L';

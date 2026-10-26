@@ -7,6 +7,7 @@
   },
   "scripts": {
     "test": "node --test \"test/**/*.test.mjs\"",
-    "build:css": "./bin/tailwindcss -i css/input.css -o css/app.css --minify"
+    "build:css": "./bin/tailwindcss -i css/input.css -o css/app.css --minify",
+    "check:images": "node scripts/check-image-sizes.mjs"
   }
 }

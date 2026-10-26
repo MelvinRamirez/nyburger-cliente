@@ -7,7 +7,7 @@
 // estando offline (`diner-pwa-shell`, "API Requests Are Always Network-Only").
 
 const CACHE_PREFIX = 'foodc-shell-';
-const CACHE_VERSION = 'foodc-shell-v10'; // se incrementa en cada deploy que cambie archivos del shell
+const CACHE_VERSION = 'foodc-shell-v11'; // se incrementa en cada deploy que cambie archivos del shell
 
 const PRECACHE = [
   './',
@@ -72,7 +72,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (request.mode === 'navigate') {
+  if (request.mode === 'navigate' && request.destination === 'document') {
     event.respondWith(
       caches.match('./index.html').then((cached) => cached || fetch(request)),
     );
